@@ -15,7 +15,7 @@ pipeline {
            steps {
                script {
 
-                   def users = "dany.cenas"
+                   def users = "carlos"
 
 
                    timeout(time: 5, unit: 'MINUTES') {

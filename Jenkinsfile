@@ -45,8 +45,8 @@ pipeline {
                             sh """
                                 scp -o StrictHostKeyChecking=no target/spring-petclinic-2.4.5.jar centos@54.149.65.202:/home/centos
 
-                                ssh centos@54.149.65.202 '~/EAP-7.2.0/bin/jboss-cli.sh -c --command="undeploy spring-petclinic-2.4.5.jar"'
-                                ssh centos@54.149.65.202 '~/EAP-7.2.0/bin/jboss-cli.sh -c --command="deploy /home/centos/spring-petclinic-2.4.5.jar"'
+                                ssh centos@54.149.65.202 '~/EAP-7.4.0/bin/jboss-cli.sh -c --command="undeploy spring-petclinic-2.4.5.jar"'
+                                ssh centos@54.149.65.202 '~/EAP-7.4.0/bin/jboss-cli.sh -c --command="deploy /home/centos/spring-petclinic-2.4.5.jar"'
 
                             """
                         }
